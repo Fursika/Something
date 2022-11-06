@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="card text-center" style="width: 30rem" id="weatherAppB">
+        <div class="card-body">
+            <form class="form1" id="form1">
+                <input type="text" id="keyWord" placeholder="Write Your City" autocomplete="off" class="input-text">
+                <input type="submit" value="Search" class="searchBtn">
+            </form>
+            <header>
+              <ul class="navigation-items">
+                  <li class="navigation-item">
+                      <a href="/">Lisbon</a>
+                  </li>
+          
+                  <li class="navigation-item">
+                      <a href="/paris">Paris</a>
+                  </li>
+          
+                  <li class="navigation-item">
+                      <a href="/sydney">Sydney</a>
+                  </li>
+          
+                  <li class="navigation-item">
+                      <a href="/san-francisco">San Francisco</a>
+                  </li>
+              </ul>
+          </header>
+        <br>
+            <h1>Currently in <strong id="cityName">Dnipro</strong></h1>
+
+            <h2><img class="img" src="http://openweathermap.org/img/wn/04d@2x.png" id="icon">
+              <strong id="tempName">29</strong>
+              <span class="units">
+                <a href="#" id="cLink" class="active">˚C </a>| <a href="#" id="fLink">˚F</a></span> 
+            </h2>
+
+            <h3 id="date">Saturday 13:09</h3>
+            <h4 id="weatherD">broken clouds</h4>
+            <h5>Humidity: <span id="humidityD">75</span> %
+                Wind Speed: <span id="windspeedD">4</span> km/h</h5>
+            <br>
+            <h6><strong>Next 6 Days Forecast</strong></h6>
+
+<div class="weather-forecast" id="forecast"><div class="row">
+<div class="col-2">
+<div class="weather-forecast-date">Sun</div>
+<img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="42">
+<div class="weather-forecast-temperatures">
+  <span class="weather-forecast-temperature-max"> 29° </span>
+  <span class="weather-forecast-temperature-min"> 27° </span>
+</div>
+</div>
+
+<div class="col-2">
+<div class="weather-forecast-date">Mon</div>
+<img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="42">
+<div class="weather-forecast-temperatures">
+  <span class="weather-forecast-temperature-max"> 29° </span>
+  <span class="weather-forecast-temperature-min"> 27° </span>
+</div>
+</div>
+
+<div class="col-2">
+<div class="weather-forecast-date">Tue</div>
+<img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="42">
+<div class="weather-forecast-temperatures">
+  <span class="weather-forecast-temperature-max"> 29° </span>
+  <span class="weather-forecast-temperature-min"> 27° </span>
+</div>
+</div>
+
+<div class="col-2">
+<div class="weather-forecast-date">Wed</div>
+<img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="42">
+<div class="weather-forecast-temperatures">
+  <span class="weather-forecast-temperature-max"> 29° </span>
+  <span class="weather-forecast-temperature-min"> 27° </span>
+</div>
+</div>
+
+<div class="col-2">
+<div class="weather-forecast-date">Thu</div>
+<img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="42">
+<div class="weather-forecast-temperatures">
+  <span class="weather-forecast-temperature-max"> 28° </span>
+  <span class="weather-forecast-temperature-min"> 27° </span>
+</div>
+</div>
+
+<div class="col-2">
+<div class="weather-forecast-date">Fri</div>
+<img src="http://openweathermap.org/img/wn/04d@2x.png" alt="" width="42">
+<div class="weather-forecast-temperatures">
+  <span class="weather-forecast-temperature-max"> 29° </span>
+  <span class="weather-forecast-temperature-min"> 28° </span>
+</div>
+</div>
+
+</div>
+
+    <script> 
+
+let weather = {
+  paris: {
+    temp: 19.7,
+    humidity: 80
+  },
+  sydney: {
+    temp: 17.3,
+    humidity: 50
+  },
+  lisbon: {
+    temp: 30.2,
+    humidity: 20
+  },
+  "san francisco": {
+    temp: 20.9,
+    humidity: 100
+  },
+  dnipro: {
+    temp: -5,
+    humidity: 20
+  }
+};
+    </script>
+</body>
+</html>
